@@ -1,0 +1,30 @@
+cabal-version:      3.0
+name:               website
+version:            0.1.0.0
+-- synopsis:
+-- description:
+homepage:           dkr6.com
+license:            AGPL-3.0-or-later
+license-file:       LICENSE
+author:             dkr6
+maintainer:         dylank@posteo.com
+-- copyright:
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+executable website
+    import:           warnings
+    main-is:          Main.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:
+        base ^>=4.19.2.0,
+        cmark ,
+        text ,
+        blaze-html
+    hs-source-dirs:   app
+    default-language: Haskell2010

@@ -22,7 +22,7 @@ executable website
     -- other-modules:
     -- other-extensions:
     build-depends:
-        base ^>=4.19.2.0,
+        base ,
         cmark ,
         text ,
         blaze-html

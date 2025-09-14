@@ -25,7 +25,7 @@ template md = docTypeHtml $ do
   H.head $ do
     H.title "dkr6.com"
   H.body $ do
-    H.div $ toHtml md
+    H.div $ preEscapedToHtml md
 
 usage :: IO ()
 usage = Prelude.putStrLn "Usage: website [-vh [file...]"
